@@ -58,20 +58,22 @@ function runProgram(){
 			    	dataType: "jsonp",
 			    	cache: false,
 			    	success : function(jsonObj){
-						userLocation.relativeHumidity = jsonObj.location.relative_humidity;
-						userLocation.weather = jsonObj.location.weather;
-						userLocation.windString = jsonObj.location.wind_string;
-						userLocation.pressureIn = jsonObj.location.pressure_in;
-						userLocation.dewpointF = jsonObj.location.dewpoint_f;
-						userLocation.visibilityMi = jsonObj.location.visibility_mi;
-						userLocation.uv = jsonObj.location.UV;
-						userLocation.precipTodayIn = jsonObj.location.precip_today_in;
+						userLocation.relativeHumidity = jsonObj.current_observation.relative_humidity;
+						userLocation.weather = jsonObj.current_observation.weather;
+						userLocation.windString = jsonObj.current_observation.wind_string;
+						userLocation.pressureIn = jsonObj.current_observation.pressure_in;
+						userLocation.dewpointF = jsonObj.current_observation.dewpoint_f;
+						userLocation.visibilityMi = jsonObj.current_observation.visibility_mi;
+						userLocation.uv = jsonObj.current_observation.UV;
+						userLocation.precipTodayIn = jsonObj.current_observation.precip_today_in;
 						
+						
+						var moreData = '<p>Status: '+userLocation.weather+'<br/>Wind: '+userLocation.windString+'<br/>Humidity: '+userLocation.relativeHumidity+'<br/>Pressure: '+userLocation.pressureIn+'<br/>Visibility: '+userLocation.visibilityMi+'<br/>Percipitation: '+userLocation.precipTodayIn+'<br/>Dewpoint: '+userLocation.dewpointF+'<br/>UV Index: '+userLocation.uv+'</p>';
 			    		var currentTempF = Math.ceil(jsonObj.current_observation.temp_f);
 						setBackgroundColor(currentTempF);
 			    		temp.html(currentTempF+"&deg");
 			
-						$(".more-data").append();
+						$(".more-data").append(moreData).show();
 			
 			      	},
 					error : function(result) {
