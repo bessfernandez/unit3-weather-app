@@ -119,8 +119,6 @@ button {
 }
 
 .circle {
-	background-color: #fff;
-	border: 2px solid #888;
 	border-radius: 100%;
 	height: 200px;
 	width: 200px;
@@ -156,6 +154,60 @@ input {
 .add:hover {
 	background-color: #1CBBD2;
 	border: 1px solid #11A5BB;
+	color: #fff;
+}
+
+.cold {
+	background-color: #00B0F0;
+	border: 2px solid #00B0F0;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.frozen {
+	background-color: #005D7E;
+	border: 2px solid #005D7E;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.hot {
+	background-color: #953735;
+	border: 2px solid #953735;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.lukewarm {
+	background-color: #DBD40A;
+	border: 2px solid #DBD40A;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.unfilled {
+	background-color: #fff;
+	border: 2px solid #aaa;
+}
+
+.warm {
+	background-color: #DC6C0A;
+	border: 2px solid #DC6C0A;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.white-text {
 	color: #fff;
 }
 
