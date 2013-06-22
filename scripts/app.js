@@ -92,7 +92,7 @@ $(document).ready(function($) {
 							
 							//Removes the loading message and adds the current weather conditions:
 							dataTrigger.text("More Informaiton [+]");
-				    		moreData.html('Status: '+userLocation.weather+'<br/>Wind: '+userLocation.wind_string+'<br/>Humidity: '+userLocation.relative_humidity+'<br/>Pressure: '+userLocation.pressure_in+'<br/>Visibility: '+userLocation.visibility_mi+'<br/>Percipitation: '+userLocation.precip_today_in+'<br/>Dewpoint: '+userLocation.dewpoint_f+'<br/>UV Index: '+userLocation.UV);
+				    		moreData.html('Status: '+userLocation.weather+'<br/>Wind: '+userLocation.wind_string+'<br/>Humidity: '+userLocation.relative_humidity+'<br/>Pressure: '+userLocation.pressure_in+' in<br/>Visibility: '+userLocation.visibility_mi+' mi<br/>Percipitation: '+userLocation.precip_today_in+' in<br/>Dewpoint: '+userLocation.dewpoint_f+' &deg F<br/>UV Index: '+userLocation.UV);
 							setBackgroundColor(currentTempF);
 				    		temp.html(currentTempF+"&deg");
 				      	},
