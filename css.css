@@ -3,10 +3,10 @@ TABLE OF CONTENTS
 
 Line #      Name
  15         Base
- 81         Layout
-108         Module
-148         State
-175         Theme
+ 86         Layout
+109         Module
+127         State
+183         Theme
 *****************/
 
 
@@ -77,6 +77,11 @@ p {
 	line-height: 24px;
 }
 
+a {
+	color: #333;
+	text-decoration: none;
+}
+
 
 /*  LAYOUT  */
 .content-container {
@@ -88,12 +93,8 @@ p {
 	width: 400px;
 }
 
-.spaced-right {
-	margin-right: 15px;
-}
-
 .spaced-top {
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 .spaced-top-bottom {
@@ -106,31 +107,10 @@ p {
 
 
 /***  MODULE  ***/
-button {
-	border-radius: 100%;
-	cursor: pointer;
-	display: inline-block;
-	font-family: 'MuseoSans_500', helvetica, tahoma, arial, sans-serif;
-	font-size: 15px;
-	height: 31px;
-	line-height: 25px;
-	text-decoration: none;
-	width: 31px;
-}
-
 .circle {
 	border-radius: 100%;
 	height: 200px;
 	width: 200px;
-}
-
-form {
-	width: 100%;
-}
-
-input {
-	height: 25px;
-	width: 470px;
 }
 
 .title {
@@ -145,18 +125,6 @@ input {
 
 
 /***  STATE  ***/
-.add {
-	background-color: #1CBBD2;
-	border: 1px solid #1CBBD2;
-	color: #fff;
-}
-
-.add:hover {
-	background-color: #1CBBD2;
-	border: 1px solid #11A5BB;
-	color: #fff;
-}
-
 .cold {
 	background-color: #00B0F0;
 	border: 2px solid #00B0F0;
@@ -239,6 +207,14 @@ input {
 	text-align: center;
 }
 
+.credit-text {
+	font-size: 10px;
+}
+
 .location-text {
+	font-size: 12px;
+}
+
+.more-data {
 	font-size: 12px;
 }
