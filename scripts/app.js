@@ -75,7 +75,7 @@ $(document).ready(function($) {
 					var locationDataNeeded = ["city", "state", "country"];
 					var jsonToParse = jsonObj["location"];
 					pushToObject(userLocation, locationDataNeeded, jsonToParse);
-				    locationText.html("<b>You're Current Location:</b><br/>"+userLocation.city+", "+userLocation.state+" "+userLocation.country);
+				    locationText.html("<b>Your Current Location:</b><br/>"+userLocation.city+", "+userLocation.state+" "+userLocation.country);
 
 		    
 				    //This uses the broswer location data to pull in weather data:
